@@ -128,7 +128,7 @@ export default function OrderPage() {
                 </p>
                 <div className="bg-green-50 border border-green-200 rounded-lg p-4 mb-6">
                   <p className="text-green-800 font-medium">Order ID: {orderId}</p>
-                  <p className="text-green-700 text-sm mt-1">Please save this ID for your records</p>
+                  <p className="text-green-700 text-sm mt-1">Please save this ID for your payment reference</p>
                 </div>
                 <div className="space-y-3 text-gray-600 mb-8">
                   <p>• We'll contact you within 24 hours to confirm your order</p>

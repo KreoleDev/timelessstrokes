@@ -13,8 +13,50 @@ export default function HomePage() {
       <div className="container mx-auto px-4 py-8 max-w-6xl">
         <AnimatedSection>
           <section className="text-center mb-16">
-            <div className="relative bg-gradient-to-br from-orange-100 to-pink-100 rounded-3xl p-12 border-4 border-orange-200 shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-[1.02] group">
+            <div className="
+            relative bg-gradient-to-br from-orange-100 to-pink-100
+            rounded-3xl p-12 border-4 border-orange-200
+            shadow-lg hover:shadow-xl transition-all duration-500
+            hover:scale-[1.02] group
+          ">
               {/* Decorative scalloped border effect */}
+              <div className="
+              absolute inset-0 rounded-3xl border-8 border-orange-200
+              opacity-30 group-hover:opacity-50 transition-opacity duration-500
+            "></div>
+              <div className="relative z-10 flex flex-col md:flex-row justify-center gap-8">
+                <div className="overflow-hidden rounded-2xl">
+                  <Image
+                    src="/images/hero-banner1.gif"
+                    alt="Timeless Strokes Hero Left"
+                    width={300}
+                    height={100}
+                    className="mx-auto shadow-md hover:scale-110 transition-transform duration-700 ease-out"
+                  />
+                </div>
+                <div className="overflow-hidden rounded-2xl">
+                  <Image
+                    src="/images/hero-banner.jpg"
+                    alt="Timeless Strokes Hero Right"
+                    width={350}
+                    height={100}
+                    className="mx-auto shadow-md hover:scale-110 transition-transform duration-700 ease-out"
+                  />
+                </div>
+              </div>
+              <h1 className="font-serif text-6xl text-gray-800 mb-4 text-balance animate-fade-in-up">
+                Timeless Strokes
+              </h1>
+              <p className="text-xl text-gray-700 font-medium animate-fade-in-up animation-delay-300">
+                Custom Banners for Every Occasion
+              </p>
+            </div>
+          </section>
+        </AnimatedSection>
+        {/* <AnimatedSection>
+          <section className="text-center mb-16">
+            <div className="relative bg-gradient-to-br from-orange-100 to-pink-100 rounded-3xl p-12 border-4 border-orange-200 shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-[1.02] group">
+              
               <div className="absolute inset-0 rounded-3xl border-8 border-orange-200 opacity-30 group-hover:opacity-50 transition-opacity duration-500"></div>
 
               <div className="relative z-10">
@@ -36,8 +78,7 @@ export default function HomePage() {
               </div>
             </div>
           </section>
-        </AnimatedSection>
-
+        </AnimatedSection> */}
         <AnimatedSection delay={200}>
           <section className="mb-16">
             <div className="bg-gradient-to-br from-orange-100 to-pink-100 rounded-3xl p-8 border-4 border-orange-200 shadow-lg hover:shadow-xl transition-all duration-500">
@@ -318,3 +359,4 @@ export default function HomePage() {
     </div>
   )
 }
+
